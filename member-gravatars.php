@@ -6,8 +6,6 @@ Author: Takayuki Miyauchi
 Plugin URI: https://github.com/wakayama-it-carnival/member-gravatars
 Description: Insert google map convert from address.
 Author URI: http://wakayama-it-carnival.org/
-Domain Path: /languages
-Text Domain: simplemap
 */
 
 
