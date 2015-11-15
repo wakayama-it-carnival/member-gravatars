@@ -4,7 +4,7 @@ Plugin Name: Member Gravatars
 Version: 1.0.0
 Author: Takayuki Miyauchi
 Plugin URI: https://github.com/wakayama-it-carnival/member-gravatars
-Description: Insert google map convert from address.
+Description: Shortcode that is displays gravatars of users in your site.
 Author URI: http://wakayama-it-carnival.org/
 */
 
