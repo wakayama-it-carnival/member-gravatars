@@ -16,8 +16,6 @@ add_shortcode( 'gravatars', function( $atts, $content ){
 		'who'     => 'authors',
 	), $atts, 'gravatars' );
 
-	var_dump($atts);
-
 	$users = get_users( array(
 		'orderby'      => $atts['orderby'],
 		'order'        => $atts['order'],
