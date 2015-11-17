@@ -11,13 +11,19 @@ php:
 
 env:
   - WP_VERSION=latest WP_MULTISITE=0
+  global:
+    - SVN_REPO: http://plugins.svn.wordpress.org/member-gravatars/
+    - GH_REF: https://github.com/miya0001/member-gravatars.git
+    - secure: "oFlQ32t+n29xJHSrd4eKjrqTNxTGIP2QGe2EliKLaij2usMtD94CzHM1/nVgmYcUieeNxObH2fuSJqFcENCXjkix+jqWBAHExPcBf5o02yE0OjJl27qTiFLT2WmAq1IAR88P88WJDy42bMMOFDgs0NXkcsKQbrE2Gf0jRdFSqIVZ787d7TovVdSbblWgpod017U4Q8MJtseONo6Rp9Grn0WAGjOEh4S7acDJnCQiMsMKc0/bqpiCg38QQ9eA3dAj653Imer72jTChmXvE4SSsI1MCzlfsQoOBzlwGWGyKy3/pw7HEb0KqLo8p2HiVQbMByDoErKKQdTpr/7Rc5/fmS7RCowAGaWbTwrDTs3nHL0FAA17RTF3jZq4IEVchurGyhc1fsFJbxO/PxMZr4hFyR3Gt1yyMoBBLrpSKkFVpBJP1YpsEvf4erygRjz+RR+ScqKSjLsLYiAZbLgIpQaeMJ/7l4M3wHd+2CN3aR0SB2K2ySFKMli0tFClq8/i9slYmAYXH++iT9il9YyAAx2NDLRmbZbvC7I7eUF9KQcnKrU1QGvcyJ1bSb+1mA24HoHdo8SVATmvrvTnO/kNY+8q7rxMFpx0yBe2K3sIslrEVAw4MpI0xOezMDUzfdPN2WZFnI5CNSDWOkaLs1b2F44xseSyDxCmIn3C5iTz4Y20Eu8="
 
 matrix:
   include:
     - php: 5.3
-      env: WP_VERSION=latest WP_MULTISITE=0
+      env: WP_VERSION=latest WP_MULTISITE=0 WP_PULUGIN_DEPLOY=1
 
 before_script:
   - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
 
 script: phpunit
+
+after_success: curl -L https://raw.githubusercontent.com/miya0001/travis2wpplugin/master/deploy.sh | bash
