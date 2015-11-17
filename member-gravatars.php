@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Member Gravatars
-Version: 1.0.0
+Version: 1.0.1
 Author: Takayuki Miyauchi
 Plugin URI: https://github.com/wakayama-it-carnival/member-gravatars
 Description: Shortcode that is displays gravatars of users in your site.
