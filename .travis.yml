@@ -10,7 +10,8 @@ php:
   - 5.6
 
 env:
-  - WP_VERSION=latest WP_MULTISITE=0
+  matrix:
+    - WP_VERSION=latest WP_MULTISITE=0
   global:
     - SVN_REPO: http://plugins.svn.wordpress.org/member-gravatars/
     - GH_REF: https://github.com/miya0001/member-gravatars.git
