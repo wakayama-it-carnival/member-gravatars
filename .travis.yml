@@ -14,7 +14,7 @@ env:
     - WP_VERSION=latest WP_MULTISITE=0
   global:
     - SVN_REPO: https://plugins.svn.wordpress.org/member-gravatars/
-    - GH_REF: https://github.com/miya0001/member-gravatars.git
+    - GH_REF: https://github.com/wakayama-it-carnival/member-gravatars.git
     - secure: "mDSOUnbMw5U+c034WAQnY9am3Z1fYJeYySRD/VSYZ+SmBqZmVuB0muGuN+ZlV8vyt69kIDKKPILV8nXi11V/VBwLRofYY1lfT7f5zA9yGwvZA6rgnVfZQl1FdWipqUW4JrLziyDEz2r251mbZehgPHPqQ06etOiy/siG6IzWaxpcEyW/0CbxQhQ6ICdkZN7eVUCfQTDIy6OMdDzvJFtobvnMViX3ZhP/hKSxApm0h61rXfA10C2HTXgGdWU0fsqq4Ku0eLYgXvgIb7bGiRuaABBGu14Tr0SugRBqDTpr9IkxQ6UvpB3n42iEVZs6pQzvkqDBKYckeW1Ha1Q+cmvFd4iuOxeIzqGxCNi0VVd0I1DH62d7Fb0v0vpViBzPWNPLVLjCM4zfA77frJ78d0HJNZxW76FcxE0PXk2Cy+/hl8N8TzKmjDcVecZTU8+Gk4ft8RGkWF2wvQfl7ouZAuEMmEPpBOBRLhMg9cgtU95cvexd1+Pnq1Mm+qbkHCXP+nkVUOoZ7FgNujt3IdvnjGoJUd9UR+qE/v8w9jq5BaMVeS3EDdkLk1swDZY4HwxKxmGX7Czfo/EdNttxwJp/iPWTodZW7SoyvaawSgP5VZ4R+k8hh5C60RGC59HjCSshAysqh+WCC/2PLn4qlr1OvRml3xszffATStdZTOW1ZuTXyYo="
 
 matrix:
